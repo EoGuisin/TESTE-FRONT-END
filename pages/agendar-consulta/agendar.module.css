@@ -1,0 +1,43 @@
+.customselect {
+  position: relative;
+  font-family: Inter;
+  font-weight: 200;
+  color: #747474;
+}
+
+.customselect select {
+  display: none;
+}
+
+.selectselected {
+  background-color: #FFF;
+  border-radius: 8px;
+  border: 1px solid #D5D5D5;
+}
+
+.selectitems {
+  position: absolute;
+  background-color: #FFF;
+  z-index: 99;
+}
+
+/*hide the element*/
+.selecthide {
+  display: none;
+}
+
+/*words inside the element*/
+.selectitems div, .selectselected {
+  color: #747474;
+  border: 1px solid transparent;
+  border-color: rgba(0, 0, 0, 0.1) ;
+  background-color: #FFF;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 14px;
+  height: 2.8rem;
+  width: 16.5rem;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+}
